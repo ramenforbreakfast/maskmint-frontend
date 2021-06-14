@@ -14,7 +14,7 @@ export function MaskCard({ tokenSym, tokenName, tokenBal, tokenAddr, maskName, m
     const tokenURL = "https://etherscan.io/address/" + { tokenAddr }
     const imgURL = "https://hashmasksstore.blob.core.windows.net/hashmaskspreview/" + ((maskID + 10141) % 16384) + ".png"
     return (
-        <div className="border-2 border-gray-600 rounded-lg w-1/4 m-2 bg-gray-200">
+        <div className="border-2 border-gray-600 rounded-lg w-1/4 m-2 max-w-max bg-gray-200">
             <div className="w-full p-2 border-b border-1 border-white">
                 <h3 className="text-xl font-mono">Mask #{maskID}</h3>
                 <h3 className="text-xl italic font-mono">"{maskName}"</h3>
